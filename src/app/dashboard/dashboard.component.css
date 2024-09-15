@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0;
+  color: #333;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: blue;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.content-container {
+  margin-top: 60px; /* Reduced space for fixed elements */
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-and-dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Reduced space between the button and dropdown */
+  margin-top: 10px; /* Reduced space above the button and dropdown */
+}
+
+.go-to-benchmarking-button {
+  padding: 15px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-to-benchmarking-button:hover {
+  background-color: #218838;
+}
+
+.dropdown-container {
+  margin: 0;
+}
+
+.dropdown-select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.summary-container {
+  margin-top: 20px; /* Space between the dropdown and summary */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: 400px; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.summary-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+  word-wrap: break-word; /* Ensure long words wrap correctly */
+}
+
+.summary-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button i {
+  font-size: 16px;
+}
+
